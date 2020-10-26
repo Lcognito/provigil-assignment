@@ -1,0 +1,21 @@
+<?xml version = "1.0"?>
+
+<xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema">
+   <xs:element name = 'subscriptions'>
+      <xs:complexType>
+         <xs:sequence>
+             <xs:element name = 'subscription' type = 'SubscriptionType' minOccurs = '0' 
+                maxOccurs = 'unbounded' />
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+
+   <xs:complexType name = "SubscriptionType">
+      <xs:sequence>
+         <xs:element name = "id" type = "xs:string"/>
+         <xs:element name = "area" type = "xs:string"/>
+         <xs:element name = "plan" type = "xs:string"/>
+         <xs:element name = "location" type = "xs:string"/>
+      </xs:sequence>      
+   </xs:complexType>			 
+</xs:schema>

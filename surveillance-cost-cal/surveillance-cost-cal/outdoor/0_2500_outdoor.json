@@ -1,0 +1,5 @@
+{
+	"location": "outdoor",
+	"sq_ft": "<=2500",
+	"sur_cost": { "monthly": "2.5", "one_year": "2" }
+}

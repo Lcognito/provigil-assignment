@@ -1,0 +1,5 @@
+{
+	"location": "indoor",
+	"sq_ft": "5001-50000",
+	"sur_cost": { "monthly": "1", "one_year": "0.6" }
+}
