@@ -29,7 +29,7 @@ import org.json.simple.parser.ParseException;
 public class PlansHandler {
 
     private static PlansHandler inst = null;
-    private boolean plansBuilt = false;
+
 
     // The plans need to be in sorted order based on Sq. Ft.
     private TreeMap<SquareFootage, Plan> indoorPlans = null;
@@ -173,9 +173,6 @@ public class PlansHandler {
             }
 
         }
-
-        plansBuilt = true;
-
     }
 
     public TreeMap<SquareFootage, Plan> getAllIndoorPlans() {
@@ -186,7 +183,4 @@ public class PlansHandler {
         return outdoorPlans;
     }
 
-    public boolean arePlansAvailable() {
-        return plansBuilt;
-    }
 }
